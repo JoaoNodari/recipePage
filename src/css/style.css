@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--stone-150);
+}
+
+.container {
+    max-width: 850px;
+    padding: 50px;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.container .principal {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container .principal .imagem img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.container .principal .informacoes-titulo .title {
+    font-family: "Young Serif", serif;
+    margin-bottom: 20px;
+}
+
+.container .principal .informacoes-titulo p {
+    font-family: "Outfit", sans-serif;
+    color: var(--stone-150);
+    font-weight: 700;
+}
+
+.container .principal .time {
+    background-color: var(--rose-50);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.container .principal .time h3 {
+    font-family: "Young Serif", serif;
+    color: var(--rose-800);
+    margin-bottom: 20px;
+}
+
+.container .principal .time ul li {
+    margin-bottom: 10px;
+    font-family: "Outfit", sans-serif;
+    color: var(--stone-600);
+}
+
+.container .principal .time ul li strong {
+    color: var(--stone-600);
+}
+
+
+.container .principal .ingredientes h3 {
+    font-family: "Young Serif", serif;
+    color: var(--brown-800);
+    margin-bottom: 20px;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+.container .principal .ingredientes ul {
+    padding: 30px;
+}
+
+.container .principal .ingredientes ul li {
+    margin-bottom: 10px;;
+    font-family: "Outfit", sans-serif;
+    color: var(--stone-600);
+}
+
