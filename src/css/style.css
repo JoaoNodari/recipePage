@@ -9,21 +9,20 @@ body {
 }
 
 .container {
-    max-width: 850px;
-    padding: 50px;
     background-color: var(--white);
+    max-width: 850px;
     border-radius: 20px;
+}
+
+.container .imagem img {
+    width: 100%;
 }
 
 .container .principal {
     display: flex;
     flex-direction: column;
     gap: 50px;
-}
-
-.container .principal .imagem img {
-    width: 100%;
-    border-radius: 50px;
+    padding: 30px;
 }
 
 .container .principal .informacoes-titulo .title {
@@ -33,8 +32,6 @@ body {
 
 .container .principal .informacoes-titulo p {
     font-family: "Outfit", sans-serif;
-    color: var(--stone-150);
-    font-weight: 700;
 }
 
 .container .principal .time {
@@ -60,7 +57,7 @@ body {
 }
 
 
-.container .principal .ingredientes h3 {
+.container .principal .title-h3 {
     font-family: "Young Serif", serif;
     color: var(--brown-800);
     margin-bottom: 20px;
@@ -78,3 +75,84 @@ body {
     color: var(--stone-600);
 }
 
+.container .principal hr {
+    width: 100%;
+}
+
+.container .principal .instrucoes ol {
+    padding: 20px;
+}
+
+.container .principal .instrucoes ol li {
+    color: var(--brown-800);
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.container .principal .instrucoes ol li p strong {
+    color: var(--stone-600);
+    font-weight: bold;
+}
+
+.container .principal .instrucoes ol li p {
+    color: var(--stone-600);
+    font-weight: 500;
+}
+
+.container .principal .nutricao .tabela {
+    margin-bottom: 50px;
+}
+
+.container .principal .nutricao .mensagem-nutricao {
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 50px;
+}
+
+.container .principal .nutricao .tabela .items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .principal .nutricao .tabela .items {
+    font-family: "Outfit", sans-serif;
+}
+
+.container .principal .nutricao .tabela .items .valor {
+    font-family: "Outfit", sans-serif;
+    color: var(--rose-800);
+    font-weight: 800;
+}
+
+.container .principal .nutricao .tabela .items .info {
+    font-family: "Outfit", sans-serif;
+    color: var(--stone-600);
+    font-weight: 800;
+}
+
+.container .principal .nutricao .tabela hr {
+    margin: 10px 0;
+}
+
+@media(min-width: 800px) {
+
+    .container {
+        margin: 100px;
+    }
+
+    .container .imagem {
+        padding: 30px;
+    }
+
+    .container .imagem img {
+        border-radius: 20px;
+    }
+
+    .container .principal .imagem img {
+        width: 100%;
+        border-radius: 50px;
+    }
+}
